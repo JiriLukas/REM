@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <center>
+      <TableView fx:id="personTableTV" editable="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="firstNameTC" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="birthTC" prefWidth="75.0" text="Birth" />
+            <TableColumn fx:id="ratingTC" prefWidth="75.0" text="Rating" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#addClick" text="Button" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <Button mnemonicParsing="false" onAction="#delete" text="Button" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

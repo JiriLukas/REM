@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane StackPane.alignment="CENTER">
+         <left>
+            <VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@//C:/Users/George/Pictures/hunter.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="CENTER" layoutX="10.0" layoutY="222.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Load Image" />
+                  <Button alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Create user" />
+                  <Button alignment="CENTER" layoutX="10.0" layoutY="160.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Edit user" />
+                  <Button alignment="CENTER" layoutX="10.0" layoutY="191.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Delete user" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Back" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </left>
+         <StackPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </StackPane.margin>
+         <bottom>
+            <Label text="Console" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+            </Label>
+         </bottom>
+         <center>
+            <GridPane hgap="15.0" vgap="15.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints fillWidth="false" halignment="LEFT" hgrow="ALWAYS" />
+                <ColumnConstraints fillWidth="false" halignment="LEFT" />
+                <ColumnConstraints fillWidth="false" halignment="LEFT" />
+                  <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="ALWAYS" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints vgrow="ALWAYS" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="ALWAYS" />
+              </rowConstraints>
+               <children>
+                  <Label text="NAME" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="LAST NAME" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="LOGIN" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField promptText="User Name" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField promptText="User Last Name" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField promptText="User Login" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField promptText="User Password" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <TextField promptText="Confirm Password" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Label text="PASSWORD" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="CONFIRM PASSWORD" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </GridPane>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" visible="false">
+         <center>
+            <GridPane vgap="10.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" />
+                  <ColumnConstraints hgrow="SOMETIMES" />
+                  <ColumnConstraints hgrow="ALWAYS" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints vgrow="ALWAYS" />
+                  <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="ALWAYS" />
+              </rowConstraints>
+               <children>
+                  <Label text="PASSWORD" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="USER NAME" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <HBox alignment="CENTER" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="LOG IN" HBox.hgrow="ALWAYS" />
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="NEW USER" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+
+
+
